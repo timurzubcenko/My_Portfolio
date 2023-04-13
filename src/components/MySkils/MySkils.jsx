@@ -12,8 +12,7 @@ const MySkils = () => {
     gsap.registerPlugin(ScrollTrigger);
 
     useEffect(() => {
-        const tl = gsap.timeline()
-        tl.from(title, {
+        gsap.from([title, text], {
             scrollTrigger: {
                 trigger: section,
                 start: 'top center',
@@ -22,20 +21,7 @@ const MySkils = () => {
                 // markers: true,
                 // pin: true
             },
-            yPercent: '50',
-            opacity: 0,
-            duration: 1,
-        })
-        tl.from(text, {
-            scrollTrigger: {
-                trigger: section,
-                start: 'top center',
-                end: 'center center',
-                scrub: true,
-                // markers: true,
-                // pin: true
-            },
-            yPercent: '50',
+            y: -200,
             opacity: 0,
             duration: 1,
         })
