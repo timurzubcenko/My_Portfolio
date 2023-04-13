@@ -12,13 +12,6 @@ import node from '../../assets/img/n.7a33a3dcc5d0e020dd08.png'
 const MyCard = () => {
 
     let card = useRef(null)
-    let name = useRef(null)
-    let card_text = useRef(null)
-    let github = useRef(null)
-    let social_btn = useRef(null)
-    let social_btn_2 = useRef(null)
-    let social_btn_3 = useRef(null)
-    let social_btn_4 = useRef(null)
 
     useEffect(() => {
         const tl = gsap.timeline()
@@ -31,25 +24,25 @@ const MyCard = () => {
                 <img src={myPhoto} alt="" />
             </div>
             <div className={s.text}>
-                <h1 ref={el => name = el}>Timur Zubchenko</h1>
-                <p ref={el => card_text = el}>Hello, I'm Timur, I'm 17 years old and I'm a web developer from Ukraine, namely the city of Zaporozhye.</p>
+                <h1 >Timur Zubchenko</h1>
+                <p >Hello, I'm Timur, I'm 17 years old and I'm a web developer from Ukraine, namely the city of Zaporozhye.</p>
             </div>
-            <a ref={el => github = el} className={s.link} href="https://github.com/timurzubcenko" target="_blank">
+            <a className={s.link} href="https://github.com/timurzubcenko">
                 <Github className={s.icon_github} />
                 <p>GitHub</p>
             </a>
             <div className={s.social_btns}>
-                <button ref={el => social_btn = el} className={s.btn}>
-                    <a href=""><img src={mongoDB} alt="" /></a>
+                <button className={s.btn}>
+                    <img src={mongoDB} alt="" />
                 </button>
-                <button ref={el => social_btn_2 = el} className={s.btn}>
-                    <a href=""><img src={express} alt="" /></a>
+                <button className={s.btn}>
+                    <img src={express} alt="" />
                 </button>
-                <button ref={el => social_btn_3 = el} className={s.btn}>
-                    <a href=""><img src={react} alt="" /></a>
+                <button className={s.btn}>
+                    <img src={react} alt="" />
                 </button>
-                <button ref={el => social_btn_4 = el} className={s.btn}>
-                    <a href=""><img src={node} alt="" /></a>
+                <button className={s.btn}>
+                    <img src={node} alt="" />
                 </button>
             </div>
         </div >

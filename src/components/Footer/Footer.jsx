@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react'
 import s from './Footer.module.scss'
-import { Twitter, Instagram, Telegram, Github } from 'react-bootstrap-icons'
+import { Instagram, Telegram, Github } from 'react-bootstrap-icons'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { Link } from 'react-router-dom'
@@ -37,10 +37,9 @@ const Footer = ({ setStatusLink }) => {
                     </Link>
                 </div>
                 <div className={s.social} ref={el => social = el}>
-                    <a target='_blank' href=""><Twitter /></a>
-                    <a target='_blank' href="https://instagram.com/timurzubcenko?igshid=YmMyMTA2M2Y="><Instagram /></a>
-                    <a target='_blank' href="https://github.com/timurzubcenko"><Github /></a>
-                    <a target='_blank' href="https://t.me/timurzubchenko"><Telegram /></a>
+                    <a href="https://instagram.com/timurzubcenko?igshid=YmMyMTA2M2Y="><Instagram /></a>
+                    <a href="https://github.com/timurzubcenko"><Github /></a>
+                    <a href="https://t.me/timurzubchenko"><Telegram /></a>
                 </div>
                 <p className={s.end_footer}>subscribe to me <br /> on
                     Telegram, Instagram, GitHub, Twitter</p>

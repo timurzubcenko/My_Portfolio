@@ -27,7 +27,6 @@ const Header = ({ statusLink, setStatusLink }) => {
         setStatusLink(e)
     }
 
-
     return (
         <header className={`${s.header}`} ref={el => navbar = el}>
             <div className={`${s.in_header}`}>

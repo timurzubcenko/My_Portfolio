@@ -6,7 +6,6 @@ import MyPhoto from '../../assets/img/myPhoto.jpg'
 import { Link } from 'react-router-dom'
 
 const AboutMe = ({ setStatusLink }) => {
-
     let about_me = useRef(null)
     let section_am = useRef(null)
     let picture = useRef(null)

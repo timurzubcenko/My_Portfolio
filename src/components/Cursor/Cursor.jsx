@@ -3,7 +3,6 @@ import s from './Cursor.module.scss'
 import { gsap } from 'gsap'
 
 const Cursor = () => {
-
     let mouseX = 0, mouseY = 0, positionX = 0, positionY = 0
 
     function mouseCoords(e) {

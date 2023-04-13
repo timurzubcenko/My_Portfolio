@@ -48,13 +48,13 @@ const HomePage = ({ setStatusLink }) => {
             <section className={s.section} ref={el => section = el}>
                 <div className={s.social_btns} ref={el => social_btns = el}>
                     <button className={s.btn}>
-                        <a target='_blank' href="https://www.instagram.com/timurzubcenko/"><i><Instagram /></i></a>
+                        <a href="https://www.instagram.com/timurzubcenko/"><i><Instagram /></i></a>
                     </button>
                     <button className={s.btn}>
-                        <a target='_blank' href="https://t.me/timurzubchenko"><i><Telegram /></i></a>
+                        <a href="https://t.me/timurzubchenko"><i><Telegram /></i></a>
                     </button>
                     <button className={s.btn}>
-                        <a target='_blank' href="https://github.com/timurzubcenko"><i><Github /></i></a>
+                        <a href="https://github.com/timurzubcenko"><i><Github /></i></a>
                     </button>
                 </div>
                 <div className={`${s.in_section} container`}>
