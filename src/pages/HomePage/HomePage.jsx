@@ -33,12 +33,12 @@ const HomePage = ({ setStatusLink }) => {
             scrollTrigger: {
                 trigger: section,
                 start: 'top top',
-                end: 'center top',
+                end: 'bottom top',
                 scrub: true,
                 // markers: true,
             },
-            opacity: 0,
-            // scale: .95,
+            opacity: .4,
+            scale: .9,
         })
     }, [])
 

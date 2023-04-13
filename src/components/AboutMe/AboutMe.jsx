@@ -22,7 +22,7 @@ const AboutMe = ({ setStatusLink }) => {
                 // markers: true,
                 // pin: true
             },
-            yPercent: '100',
+            yPercent: '50',
             opacity: 0,
         })
 
