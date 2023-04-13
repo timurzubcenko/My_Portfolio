@@ -21,7 +21,7 @@ const SendMessage = () => {
     const sendMessage = async () => {
         try {
 
-            await axios.post('http://localhost:8000' + '/api/messages/add', message)
+            await axios.post(API_URL + '/api/messages/add', message)
                 .then((res) => {
                     console.log(res.data)
                     setState(res.data)
