@@ -33,7 +33,7 @@ const MyWorks = () => {
             scrollTrigger: {
                 trigger: section_1,
                 start: 'top top',
-                end: '+7000',
+                end: '+=7000',
                 scrub: true,
                 pin: true,
             },
