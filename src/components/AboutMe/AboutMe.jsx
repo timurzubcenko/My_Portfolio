@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import s from './AboutMe.module.scss'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import MyPhoto from '../../assets/img/myPhoto.jpg'
+import MyPhoto from '../../assets/img/photo_2023-04-13-14.34.55.webp'
 import { Link } from 'react-router-dom'
 
 const AboutMe = ({ setStatusLink }) => {
@@ -49,11 +49,20 @@ const AboutMe = ({ setStatusLink }) => {
                 <div className={s.about_me} ref={el => about_me = el}>
                     <h3>About me</h3>
                     <h2>Timur Zubchenko</h2>
-                    <p>I'm Graphic Designer,and I'm very passionate and dedicated to my work
-                        With 20 years experience as a professional Photography, I have lot of
-                        acquired the skills and knowledge necessary to make your project a
-                        success. I enjoy every step the Photography process,from discussion
-                        and collaboration.</p>
+                    <p>Frontend development</p>
+
+                    <p>Professional skills and knowledge
+                        • Strong knowledge: Javascript ES6, ES5, React, Node JS;
+                        • Layout: HTML5, CSS3/SASS, adaptive and cross-browser layout, layout for mobile devices;
+                        • Basic knowledge: MongoDB, Express JS;
+                        • Experience with: restAPI, GIT;
+                        • Work with graphic editors: Figma, Photoshop;
+                        • There is an understanding</p>
+
+                    <p>Languages
+                        • Russian
+                        • Ukrainian
+                        • English language ‒ A2 now actively studying</p>
                     <Link to='/sendMessage'>
                         <button onClick={() => setStatusLink(2)} className={s.btn}>
                             Send message to me
