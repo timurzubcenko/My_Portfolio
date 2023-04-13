@@ -1,0 +1,34 @@
+.main_cursor {
+
+    .cursor,
+    .aura {
+        position: absolute;
+        border-radius: 50%;
+        transition: all .5s cubic-bezier(.75, -1.27, .3, 2, 33) transform, .2s cubic-bezier(.75, -1.27, .3, 2, 33) opacity;
+        user-select: none;
+        pointer-events: none;
+        z-index: 1000;
+
+    }
+
+    .cursor {
+        width: 10px;
+        height: 10px;
+        background: #cfcfcf90;
+
+    }
+
+    .aura {
+        width: 50px;
+        height: 50px;
+        border: 1px solid #cfcfcf40;
+        background: #cfcfcf15;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .main_cursor {
+        display: none;
+    }
+}

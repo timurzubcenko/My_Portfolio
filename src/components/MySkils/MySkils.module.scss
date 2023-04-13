@@ -1,0 +1,44 @@
+.section {
+    height: 100vh;
+    background: #131320;
+    // padding: 150px 0;
+    display: flex;
+    align-items: center;
+
+
+    .in_section {
+
+        .title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h3 {
+                font-family: 'Outfit';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 12px;
+                color: #FFFFFF;
+                text-align: center;
+                background: #24263B;
+                box-shadow: 0px 0px 24px rgba(29, 31, 46, 0.42);
+                border-radius: 4px;
+                padding: 15px 20px;
+            }
+        }
+
+        .text {
+            font-family: sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 30px;
+            color: #777E91;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 30px 0;
+            text-align: center;
+        }
+    }
+}
