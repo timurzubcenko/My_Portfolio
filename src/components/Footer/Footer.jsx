@@ -18,12 +18,12 @@ const Footer = ({ setStatusLink }) => {
         gsap.from([title, btn, social, footer], {
             scrollTrigger: {
                 trigger: footer,
-                // markers: true,
+
                 // scrub: true
             },
             scale: .5,
-            opacity: 1,
-            duration: 2
+            opacity: 0,
+            duration: 2,
         })
     }, [])
 

@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useRef, useLayoutEffect } from 'react'
 import s from './MyWorks.module.scss'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -22,18 +22,18 @@ const MyWorks = () => {
 
     gsap.registerPlugin(ScrollTrigger)
 
-    useEffect(() => {
+    useLayoutEffect(() => {
 
         [frame_1, frame_2, frame_3, frame_4, frame_5, frame_6, frame_7, frame_8, frame_9].forEach((frame, index) => {
             // frame.style.transform = `scale(${1 - (index / 10)})`
             frame.style.opacity = 0
         })
-
-        gsap.to([frame_1, frame_2, frame_3, frame_4, frame_5, frame_6, frame_7, frame_8, frame_9], {
+        const tl = gsap.timeline()
+        tl.to([frame_1, frame_2, frame_3, frame_4, frame_5, frame_6, frame_7, frame_8, frame_9], {
             scrollTrigger: {
                 trigger: section_1,
                 start: 'top top',
-                end: '+=7000',
+                end: '+=8000',
                 scrub: true,
                 pin: true,
             },
@@ -41,6 +41,7 @@ const MyWorks = () => {
             translateZ: 2000,
             stagger: 1,
             duration: 3.5,
+
             // ease: "power1.out",
 
             // opacity: 3,

@@ -138,11 +138,11 @@
         .gallery {
             .frame {
                 .frame_media_left {
-                    right: calc(var(--side-small) / 20 * var(--index) + var(--gutter))
+                    right: calc(var(--side-small) / 15 * var(--index) + var(--gutter))
                 }
 
                 .frame_media_right {
-                    left: calc(var(--side-small) / 20 * var(--index) + var(--gutter))
+                    left: calc(var(--side-small) / 15 * var(--index) + var(--gutter))
                 }
             }
         }

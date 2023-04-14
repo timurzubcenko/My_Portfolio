@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useRef, useLayoutEffect } from 'react'
 import s from './HomePage.module.scss'
 import { Instagram, Telegram, Github } from 'react-bootstrap-icons'
 import { gsap } from 'gsap'
@@ -23,7 +23,7 @@ const HomePage = ({ setStatusLink }) => {
 
     gsap.registerPlugin(ScrollTrigger);
 
-    useEffect(() => {
+    useLayoutEffect(() => {
 
         const tl = gsap.timeline()
         tl.from(main_txt, { y: 50, opacity: 0, duration: 1 })

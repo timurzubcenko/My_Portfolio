@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import s from './AboutMe.module.scss'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import MyPhoto from '../../assets/img/photo_2023-04-13-14.34.55.webp'
+import MyPhoto from '../../assets/img/photo_2023-04-14-15.27.35.webp'
 import { Link } from 'react-router-dom'
 
 const AboutMe = ({ setStatusLink }) => {
@@ -22,8 +22,9 @@ const AboutMe = ({ setStatusLink }) => {
                 // markers: true,
                 // pin: true
             },
-            yPercent: '50',
+            scale: .5,
             opacity: 0,
+            duration: .7,
         })
 
         gsap.from(picture, {
@@ -37,6 +38,7 @@ const AboutMe = ({ setStatusLink }) => {
             },
             yPercent: '50',
             opacity: 0,
+            duration: .7,
         })
     }, [])
 

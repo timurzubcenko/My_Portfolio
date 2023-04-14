@@ -21,9 +21,10 @@ const MySkils = () => {
                 // markers: true,
                 // pin: true
             },
-            y: -200,
+            scale: .5,
             opacity: 0,
-            duration: 1,
+            duration: 2,
+            ease: 'back',
         })
     }, [])
 
