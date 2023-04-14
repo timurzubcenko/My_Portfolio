@@ -5,6 +5,7 @@
     justify-content: center;
     color: white;
     text-align: center;
+    // padding: 120px 0;
 
     .wrapper {
         display: flex;
@@ -119,5 +120,12 @@
                 }
             }
         }
+    }
+}
+
+@media (max-height:690px) {
+    .main {
+        height: auto;
+        padding: 100px 0;
     }
 }
