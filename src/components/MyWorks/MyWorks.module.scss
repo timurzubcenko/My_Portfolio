@@ -132,3 +132,19 @@
         }
     }
 }
+
+@media (max-width:600px) {
+    .section {
+        .gallery {
+            .frame {
+                .frame_media_left {
+                    right: calc(var(--side-small) / 20 * var(--index) + var(--gutter))
+                }
+
+                .frame_media_right {
+                    left: calc(var(--side-small) / 20 * var(--index) + var(--gutter))
+                }
+            }
+        }
+    }
+}
