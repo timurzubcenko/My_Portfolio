@@ -7,7 +7,7 @@
 }
 
 .section {
-    color: white;
+    color: var(--color-font);
     height: 100vh;
     font-size: calc(var(--index)*.8);
     line-height: 1.75;
@@ -50,6 +50,7 @@
                 background-position: center;
                 background-size: contain;
                 background-repeat: no-repeat;
+                filter: drop-shadow(0px 0px 3px var(--color-shadow));
                 // border-radius: 20px;
             }
 
@@ -61,7 +62,7 @@
                 font-weight: 100;
                 width: min-content;
                 line-height: 1;
-                color: white;
+                color: var(--color-font);
             }
 
             h5 {

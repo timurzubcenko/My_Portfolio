@@ -1,7 +1,7 @@
 .section_am {
     padding: 100px 0;
-    background: #181827;
-    height: 100vh;
+    background: var(--color-section);
+    // height: 864px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,10 +35,10 @@
                 letter-spacing: 0.15em;
                 text-transform: capitalize;
 
-                color: #FFFFFF;
+                color: var(--color-font);
                 padding: 12px 14px;
-                background: #24263B;
-                box-shadow: 0px 0px 24px rgba(15, 16, 24, 0.42);
+                background: var(--color-background-card);
+                box-shadow: 0px 0px 24px var(--color-shadow-2);
                 border-radius: 4px;
                 display: inline-block;
                 margin-bottom: 20px;
@@ -53,7 +53,7 @@
                 /* or 133% */
 
 
-                color: #FFFFFF;
+                color: var(--color-font);
                 margin-bottom: 15px;
             }
 
@@ -66,32 +66,52 @@
                 /* or 162% */
 
 
-                color: #FFFFFF;
+                color: var(--color-font);
                 margin-bottom: 20px;
             }
 
             .btn {
                 font-family: 'Outfit';
                 font-style: normal;
-                font-weight: 700;
-                font-size: 16px;
+                font-weight: 400;
+                font-size: 22px;
                 line-height: 15px;
                 /* identical to box height, or 94% */
 
                 text-align: center;
                 text-transform: capitalize;
-
-                color: #FFFFFF;
-                padding: 20px;
-                background: #FE461C;
-                border-radius: 4px;
+                padding-bottom: 20px;
+                margin-top: 40px;
+                background: transparent;
                 border: none;
+                border-bottom: 4px solid linear-gradient(#cf59e6, #8000ff);
+                color: var(--color-accent-2);
+                color: transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+                background-image: linear-gradient(to right, var(--color-accent-2), #cf59e6, var(--color-accent-2), #8000ff);
+                background-size: 400% 400%;
+                animation: gradient 6s ease infinite;
                 cursor: pointer;
-                transition: all 0.3s;
+                transition: all .3s;
             }
 
             .btn:hover {
                 transform: scale(1.05);
+            }
+
+            @keyframes gradient {
+                0% {
+                    background-position: 0 50%;
+                }
+
+                50% {
+                    background-position: 100% 50%;
+                }
+
+                100% {
+                    background-position: 0 50%;
+                }
             }
         }
     }

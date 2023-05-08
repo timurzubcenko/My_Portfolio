@@ -9,6 +9,8 @@ import AboutMe from '../../components/AboutMe/AboutMe'
 import MyWorks from '../../components/MyWorks/MyWorks'
 import MySkils from '../../components/MySkils/MySkils'
 import Footer from '../../components/Footer/Footer'
+// import Snake from '../../components/snake/Snake'
+import SnakeGame from '../../components/SnakeGame/SnakeGame'
 
 // import img from '../../assets/img/img.svg'
 // import panto from '../../assets/img/full_1.png'
@@ -46,6 +48,7 @@ const HomePage = ({ setStatusLink }) => {
         <div className={s.home}>
             {/* <Cursor /> */}
             <section className={s.section} ref={el => section = el}>
+                <SnakeGame />
                 <div className={s.social_btns} ref={el => social_btns = el}>
                     <button className={s.btn}>
                         <a href="https://www.instagram.com/timurzubcenko/"><i><Instagram /></i></a>

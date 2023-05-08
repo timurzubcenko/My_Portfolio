@@ -1,0 +1,28 @@
+.main_cursor .cursor,
+.main_cursor .aura {
+  position: absolute;
+  border-radius: 50%;
+  transition: all 0.5s cubic-bezier(0.75, -1.27, 0.3, 2, 33) transform, 0.2s cubic-bezier(0.75, -1.27, 0.3, 2, 33) opacity;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  z-index: 1000;
+}
+.main_cursor .cursor {
+  width: 10px;
+  height: 10px;
+  background: rgba(207, 207, 207, 0.5647058824);
+}
+.main_cursor .aura {
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(207, 207, 207, 0.2509803922);
+  background: rgba(207, 207, 207, 0.0823529412);
+}
+
+@media (max-width: 800px) {
+  .main_cursor {
+    display: none;
+  }
+}/*# sourceMappingURL=Cursor.module.css.map */

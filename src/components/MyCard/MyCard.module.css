@@ -1,0 +1,93 @@
+.my_card {
+  background: #21222c;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  padding: 30px;
+  text-align: center;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.my_card .my_photo {
+  display: flex;
+  justify-content: center;
+}
+.my_card .my_photo img {
+  width: 60%;
+  height: auto;
+}
+.my_card .text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.my_card .text h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 41px;
+  color: #f1f1f1;
+}
+.my_card .text p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+  color: #8E8E8E;
+}
+.my_card .link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin: 20px 0;
+}
+.my_card .link .icon_github {
+  font-size: 20px;
+  color: #f1f1f1;
+}
+.my_card .link p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+  color: #f1f1f1;
+}
+.my_card .social_btns {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 20px;
+}
+.my_card .social_btns .btn {
+  background: #21222c;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  border: none;
+  font-size: 23px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+.my_card .social_btns .btn img {
+  width: 35px;
+  height: 35px;
+  position: relative;
+  z-index: 2;
+}
+.my_card .social_btns .btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  color: #cacaca;
+}/*# sourceMappingURL=MyCard.module.css.map */

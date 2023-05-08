@@ -1,5 +1,5 @@
 .footer {
-    color: white;
+    color: var(--color-font);
     text-align: center;
 
     .in_footer {
@@ -30,8 +30,8 @@
                 line-height: 27px;
                 text-align: center;
                 max-width: 180.5px;
-                color: #070707;
-                background: #FFFFFF;
+                color: var(--color-btn);
+                background: var(--color-bg-btn);
                 border-radius: 20px;
                 padding: 7px 22px;
                 border: none;
@@ -47,13 +47,13 @@
                 justify-content: center;
                 width: 70px;
                 height: 70px;
-                background: #131320;
-                box-shadow: 0 5px 15px -5px #000;
+                background: var(--color-btns);
+                box-shadow: 0 5px 15px -5px var(--color-shadow);
                 margin: 10px;
                 border-radius: 30%;
                 overflow: hidden;
                 position: relative;
-                color: #fff;
+                color: var(--color-font);
                 font-size: 30px;
                 transition: all 0.5s;
             }

@@ -1,0 +1,103 @@
+.main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+.main .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main .wrapper h2 {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 50px;
+  /* or 139% */
+  text-align: center;
+  color: #bfbfbf;
+}
+.main .wrapper .inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main .wrapper .inputs input {
+  background: #21222c;
+  border: none;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 16px;
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  outline: none;
+}
+.main .wrapper .inputs textarea {
+  background: #21222c;
+  resize: none;
+  border: none;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 16px;
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  outline: none;
+  width: 600px;
+}
+.main .wrapper h4 {
+  font-family: "Public Sans";
+  font-weight: 300;
+  color: rgb(127, 255, 168);
+}
+.main .wrapper .btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .wrapper .btns .btn {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 15px;
+  /* identical to box height, or 94% */
+  text-align: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  padding: 20px 40px;
+  background: #FE461C;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.main .wrapper .btns .btn:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 700px) {
+  .main .wrapper .inputs input {
+    width: 90%;
+  }
+  .main .wrapper .inputs textarea {
+    width: 90%;
+  }
+}
+@media (max-height: 690px) {
+  .main {
+    height: auto;
+    padding: 100px 0;
+  }
+}/*# sourceMappingURL=SendMessage.module.css.map */

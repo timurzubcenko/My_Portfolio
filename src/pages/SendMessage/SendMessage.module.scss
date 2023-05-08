@@ -22,7 +22,7 @@
 
             text-align: center;
 
-            color: #bfbfbf;
+            color: var(--color-name);
         }
 
         .inputs {
@@ -32,7 +32,7 @@
             gap: 20px;
 
             input {
-                background: #21222c;
+                background: var(--color-input);
                 // border: 1px solid rgba(255, 255, 255, 0.2);
                 border: none;
                 box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
@@ -44,13 +44,13 @@
                 font-size: 16px;
                 line-height: 19px;
 
-                color: #ffffff;
+                color: var(--color-font);
                 outline: none;
                 // width: 300px;
             }
 
             textarea {
-                background: #21222c;
+                background: var(--color-input);
                 resize: none;
                 // border: 1px solid rgba(255, 255, 255, 0.2);
                 border: none;
@@ -63,7 +63,7 @@
                 font-size: 16px;
                 line-height: 19px;
 
-                color: #ffffff;
+                color: var(--color-font);
                 outline: none;
                 width: 600px;
             }

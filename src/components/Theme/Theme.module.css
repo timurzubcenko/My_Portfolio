@@ -1,0 +1,133 @@
+.theme {
+  z-index: 21;
+  cursor: pointer;
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-background);
+  box-shadow: -1px 1px var(--size-shadow) var(--color-shadow);
+  border-radius: 99px;
+}
+
+.root {
+  flex-shrink: 0;
+  position: relative;
+  border-radius: 50%;
+  display: block;
+  height: 24px;
+  overflow: hidden;
+  width: 24px;
+  transition: 0.5s all ease;
+  transform: scale(1.4);
+}
+
+.root input {
+  display: none;
+}
+
+.root:before {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.root.light:before {
+  animation-duration: 0.5s;
+  animation-name: sun;
+  background-color: var(--color-font);
+  border-radius: 50%;
+  box-shadow: 10px 0 0 -3.5px var(--color-font), -10px 0 0 -3.5px var(--color-font), 0 -10px 0 -3.5px var(--color-font), 0 10px 0 -3.5px var(--color-font), 7px -7px 0 -3.5px var(--color-font), 7px 7px 0 -3.5px var(--color-font), -7px 7px 0 -3.5px var(--color-font), -7px -7px 0 -3.5px var(--color-font);
+  height: 10px;
+  left: 7px;
+  top: 7px;
+  width: 10px;
+}
+
+.root.light:before:hover {
+  background-color: var(--color-background);
+  box-shadow: 10px 0 0 -3.5px var(--color-background), -10px 0 0 -3.5px var(--color-background), 0 -10px 0 -3.5px var(--color-background), 0 10px 0 -3.5px var(--color-background), 7px -7px 0 -3.5px var(--color-background), 7px 7px 0 -3.5px var(--color-background), -7px 7px 0 -3.5px var(--color-background), -7px -7px 0 -3.5px var(--color-background);
+}
+
+.root.dark:before {
+  animation-duration: 0.5s;
+  animation-name: moon;
+  background-color: var(--color-font);
+  border-radius: 50%;
+  height: 20px;
+  left: 2px;
+  top: 2px;
+  width: 20px;
+  z-index: 1;
+}
+
+.root.dark:before:hover {
+  background-color: var(--color-background);
+}
+
+.root.dark:after {
+  animation-duration: 0.5s;
+  animation-name: moon-shadow;
+  background: var(--color-background);
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 18px;
+  position: absolute;
+  right: -2px;
+  top: -2px;
+  width: 18px;
+  z-index: 2;
+}
+
+@keyframes sun {
+  from {
+    background-color: var(--color-background);
+    box-shadow: 0 0 0 -5px var(--color-background), 0 0 0 -5px var(--color-background), 0 0 0 -5px var(--color-background), 0 0 0 -5px var(--color-background), 0 0 0 -5px var(--color-background), 0 0 0 -5px var(--color-background), 0 0 0 -5px var(--color-background), 0 0 0 -5px var(--color-background);
+  }
+
+  to {
+    background-color: var(--color-font);
+    box-shadow: 10px 0 0 -3.5px var(--color-font), -10px 0 0 -3.5px var(--color-font), 0 -10px 0 -3.5px var(--color-font), 0 10px 0 -3.5px var(--color-font), 7px -7px 0 -3.5px var(--color-font), 7px 7px 0 -3.5px var(--color-font), -7px 7px 0 -3.5px var(--color-font), -7px -7px 0 -3.5px var(--color-font);
+  }
+}
+
+@keyframes moon {
+  from {
+    height: 0;
+    left: 12px;
+    top: 12px;
+    width: 0;
+  }
+
+  to {
+    height: 20px;
+    left: 2px;
+    top: 2px;
+    width: 20px;
+  }
+}
+
+@keyframes moon-shadow {
+  from {
+    background-color: var(--color-background);
+    height: 0;
+    right: 7px;
+    top: 7px;
+    width: 0;
+  }
+
+  to {
+    background-color: var(--color-background);
+    height: 18px;
+    right: -2px;
+    top: -2px;
+    width: 18px;
+  }
+}
+
+/*# sourceMappingURL=Theme.module.css.map */

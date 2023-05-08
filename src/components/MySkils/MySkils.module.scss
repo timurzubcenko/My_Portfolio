@@ -1,6 +1,6 @@
 .section {
     // height: 100vh;
-    background: #181827;
+    background: var(--color-section);
     padding: 100px 0;
     display: flex;
     align-items: center;
@@ -19,10 +19,10 @@
                 font-weight: 600;
                 font-size: 30px;
                 line-height: 12px;
-                color: #FFFFFF;
+                color: var(--color-font);
                 text-align: center;
-                background: #24263B;
-                box-shadow: 0px 0px 24px rgba(29, 31, 46, 0.42);
+                background: var(--color-background-card);
+                box-shadow: 0px 0px 24px var(--color-shadow-2);
                 border-radius: 4px;
                 padding: 15px 20px;
             }

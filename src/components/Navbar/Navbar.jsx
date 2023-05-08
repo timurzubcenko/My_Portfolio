@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react'
 import s from './Navbar.module.scss'
 import { gsap } from 'gsap'
 import { Link } from 'react-router-dom'
+import Theme from '../Theme/Theme';
 
 const Header = ({ statusLink, setStatusLink }) => {
 
@@ -38,16 +39,17 @@ const Header = ({ statusLink, setStatusLink }) => {
                 </div>
                 <nav className={`${s.header_menu} ${stateMenu ? s.active : ''}`}>
                     <ul className={s.header_list}>
-                        <Link onClick={activateMenu} to='/home'>
+                        <Link className={s.link} onClick={activateMenu} to='/home'>
                             <li onClick={() => { clickLink(1) }} className={`${s.link_1} ${statusLink === 1 ? s.active : ''}`} >
                                 Home
                             </li>
                         </Link>
-                        <Link onClick={activateMenu} to='/sendMessage'>
+                        <Link className={s.link} onClick={activateMenu} to='/sendMessage'>
                             <li onClick={() => clickLink(2)} className={`${s.link_2} ${statusLink === 2 ? s.active : ''}`} >
                                 Send Message
                             </li>
                         </Link>
+                        <Theme />
                     </ul>
                 </nav>
             </div>

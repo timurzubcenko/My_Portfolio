@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Outfit:wght@400;500;600;700&family=Poppins:wght@400;600&family=Public+Sans:wght@300;400;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap');
+
+:root {
+  --color-blue: #1877F2;
+  --border-radius-main: 25px;
+  --border-radius-small: 20px;
+  --size-shadow: 14px; //14px
+  --size-inset-shadow: 2px;
+  --filter-blur: 4px;
+}
+
+
+:root[data-theme="light"] {
+  --color-navbar: #f3f3f480;
+  --color-navbar-border: #dbdbe6;
+  --color-background: #fcfcfc; // #f6f7fc
+  --color-background-card: #f1f1f460;
+  --color-btns: #f1f1f4;
+  --color-box: #f7fafd60;
+  --color-shadow: rgba(103, 103, 113, 0.52);
+  --color-shadow-2: rgba(103, 103, 113, 0.52);
+  --color-inset-shadow: rgba(0, 0, 0, 0.1);
+  --color-gray: #464646; //#616161;
+  --color-font: #2D2E32;
+  --color-hi: #2D2E32;
+  --color-scroll: #e6e6e6;
+  --color-name: #2c2c2c;
+  --color-snake: #e3e3f4;
+  --color-section: #f2f2f2;
+  --color-modal: #f2f2f2;
+  --color-accent-2: #33b0f9;
+  --color-btn: #ffffff;
+  --color-bg-btn: #070707;
+  --color-input: #fff;
+}
+
+:root[data-theme="dark"] {
+  --color-navbar: #2a2b3880;
+  --color-navbar-border: #2a2b37;
+  --color-background: #10101a;
+  --color-background-card: #35374460;
+  --color-btns: #2a2b38;
+  --color-box: #1e1f2510; // 1f2027
+  --color-shadow: rgba(15, 16, 24, 0.82);
+  --color-inset-shadow: rgba(0, 0, 0, 1);
+  --color-gray: #BEBEBE;
+  --color-font: #ffffff;
+  --color-hi: #BEBEBE;
+  --color-scroll: #292a33;
+  --color-name: #dcdcdc;
+  --color-snake: #20222e;
+  --color-section: #181827;
+  --color-modal: #232530;
+  --color-accent: #FE461C;
+  --color-accent-2: #33b0f9;
+  --color-accent-btn: #424458;
+  --color-btn: #070707;
+  --color-bg-btn: #fff;
+  --color-input: #21222c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* cursor: none; */
+}
+
+body {
+  font-family: sans-serif;
+  /* background-color: #131320; */
+  background: var(--color-background);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media (max-width: 800px) {
+  * {
+    cursor: auto;
+  }
+}
