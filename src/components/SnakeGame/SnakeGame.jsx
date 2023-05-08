@@ -202,7 +202,7 @@ const SnakeGame = () => {
     }, [])
 
     return (
-        <div className={s.back}>
+        <div className={s.back} style={{ filter: `blur(${autoGame ? 6 : 0}px)` }}>
             <div className={s.map} >
                 {snakeTails.map((elem, index) =>
                     <div
@@ -212,7 +212,6 @@ const SnakeGame = () => {
                             left: elem.x + "px",
                             top: elem.y + "px",
                             opacity: autoGame ? 0.5 : .7,
-                            filter: `blur(${autoGame ? 3 : 0}px)`
                         }}
                         key={index}
                         className={s.snake}
@@ -224,7 +223,7 @@ const SnakeGame = () => {
                         height: SIZE + 'px',
                         left: berry.x + "px",
                         top: berry.y + "px",
-                        filter: `blur(${autoGame ? 7 : 3}px)`
+                        // filter: `blur(${autoGame ? 7 : 3}px)`
                     }}
                     className={s.berry}
                     ref={el => food = el}

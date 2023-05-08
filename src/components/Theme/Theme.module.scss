@@ -1,18 +1,15 @@
 .theme {
-  z-index: 21;
   cursor: pointer;
-  position: fixed;
-  top: 50px;
-  right: 50px;
-  height: 60px;
-  width: 60px;
+  height: 3.4rem;
+  width: 3.4rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #b6b6b6;
-  box-shadow: -1px 1px var(--size-shadow) var(--color-shadow);
+  background: var(--color-box);
+  box-shadow: -1px 1px var(--size-shadow) var(--color-shadow), inset 0px 0px var(--size-inset-shadow) var(--color-inset-shadow);
   border-radius: 99px;
 }
+
 
 .root {
   flex-shrink: 0;
@@ -24,7 +21,6 @@
   width: 24px;
   transition: 0.5s all ease;
   transform: scale(1.4);
-  cursor: pointer;
 
   input {
     display: none;
@@ -39,31 +35,31 @@
   &.light:before {
     animation-duration: 0.5s;
     animation-name: sun;
-    background-color: #b6b6b6;
+    background-color: var(--color-font);
     border-radius: 50%;
-    box-shadow: 10px 0 0 -3.5px #b6b6b6,
-      -10px 0 0 -3.5px #b6b6b6,
-      0 -10px 0 -3.5px #b6b6b6,
-      0 10px 0 -3.5px #b6b6b6,
-      7px -7px 0 -3.5px #b6b6b6,
-      7px 7px 0 -3.5px #b6b6b6,
-      -7px 7px 0 -3.5px #b6b6b6,
-      -7px -7px 0 -3.5px #b6b6b6;
+    box-shadow: 10px 0 0 -3.5px var(--color-font),
+      -10px 0 0 -3.5px var(--color-font),
+      0 -10px 0 -3.5px var(--color-font),
+      0 10px 0 -3.5px var(--color-font),
+      7px -7px 0 -3.5px var(--color-font),
+      7px 7px 0 -3.5px var(--color-font),
+      -7px 7px 0 -3.5px var(--color-font),
+      -7px -7px 0 -3.5px var(--color-font);
     height: 10px;
     left: 7px;
     top: 7px;
     width: 10px;
 
     &:hover {
-      background-color: #b6b6b6;
-      box-shadow: 10px 0 0 -3.5px #b6b6b6,
-        -10px 0 0 -3.5px #b6b6b6,
-        0 -10px 0 -3.5px #b6b6b6,
-        0 10px 0 -3.5px #b6b6b6,
-        7px -7px 0 -3.5px #b6b6b6,
-        7px 7px 0 -3.5px #b6b6b6,
-        -7px 7px 0 -3.5px #b6b6b6,
-        -7px -7px 0 -3.5px #b6b6b6;
+      background-color: var(--color-background);
+      box-shadow: 10px 0 0 -3.5px var(--color-background),
+        -10px 0 0 -3.5px var(--color-background),
+        0 -10px 0 -3.5px var(--color-background),
+        0 10px 0 -3.5px var(--color-background),
+        7px -7px 0 -3.5px var(--color-background),
+        7px 7px 0 -3.5px var(--color-background),
+        -7px 7px 0 -3.5px var(--color-background),
+        -7px -7px 0 -3.5px var(--color-background);
     }
   }
 
@@ -71,7 +67,7 @@
     &:before {
       animation-duration: .5s;
       animation-name: moon;
-      background-color: #b6b6b6;
+      background-color: var(--color-font);
       border-radius: 50%;
       height: 20px;
       left: 2px;
@@ -80,14 +76,14 @@
       z-index: 1;
 
       &:hover {
-        background-color: white;
+        background-color: var(--color-background);
       }
     }
 
     &:after {
       animation-duration: .5s;
       animation-name: moon-shadow;
-      background: #1d1e29;
+      background: var(--color-background);
       border-radius: 50%;
       content: "";
       display: block;
@@ -103,27 +99,27 @@
 
 @keyframes sun {
   from {
-    background-color: #b6b6b6;
-    box-shadow: 0 0 0 -5px #b6b6b6,
-      0 0 0 -5px #b6b6b6,
-      0 0 0 -5px #b6b6b6,
-      0 0 0 -5px #b6b6b6,
-      0 0 0 -5px #b6b6b6,
-      0 0 0 -5px #b6b6b6,
-      0 0 0 -5px #b6b6b6,
-      0 0 0 -5px #b6b6b6;
+    background-color: var(--color-background);
+    box-shadow: 0 0 0 -5px var(--color-background),
+      0 0 0 -5px var(--color-background),
+      0 0 0 -5px var(--color-background),
+      0 0 0 -5px var(--color-background),
+      0 0 0 -5px var(--color-background),
+      0 0 0 -5px var(--color-background),
+      0 0 0 -5px var(--color-background),
+      0 0 0 -5px var(--color-background);
   }
 
   to {
-    background-color: #b6b6b6;
-    box-shadow: 10px 0 0 -3.5px #b6b6b6,
-      -10px 0 0 -3.5px #b6b6b6,
-      0 -10px 0 -3.5px #b6b6b6,
-      0 10px 0 -3.5px #b6b6b6,
-      7px -7px 0 -3.5px #b6b6b6,
-      7px 7px 0 -3.5px #b6b6b6,
-      -7px 7px 0 -3.5px #b6b6b6,
-      -7px -7px 0 -3.5px #b6b6b6;
+    background-color: var(--color-font);
+    box-shadow: 10px 0 0 -3.5px var(--color-font),
+      -10px 0 0 -3.5px var(--color-font),
+      0 -10px 0 -3.5px var(--color-font),
+      0 10px 0 -3.5px var(--color-font),
+      7px -7px 0 -3.5px var(--color-font),
+      7px 7px 0 -3.5px var(--color-font),
+      -7px 7px 0 -3.5px var(--color-font),
+      -7px -7px 0 -3.5px var(--color-font);
   }
 }
 
@@ -145,7 +141,7 @@
 
 @keyframes moon-shadow {
   from {
-    background-color: #1d1e29;
+    background-color: var(--color-background);
     height: 0;
     right: 7px;
     top: 7px;
@@ -153,10 +149,17 @@
   }
 
   to {
-    background-color: #1d1e29;
+    background-color: var(--color-background);
     height: 18px;
     right: -2px;
     top: -2px;
     width: 18px;
+  }
+}
+
+
+@media screen and (max-width: 1600px) {
+  .root {
+    transform: scale(1.3);
   }
 }
