@@ -64,6 +64,24 @@
   }
 
   &.dark {
+    background: var(--color-background);
+
+    &:before {
+      animation-duration: .5s;
+      animation-name: moon;
+      background-color: var(--color-background);
+      border-radius: 50%;
+      height: 20px;
+      left: 2px;
+      top: 2px;
+      width: 22px;
+      z-index: 1;
+
+      &:hover {
+        background-color: var(--color-background);
+      }
+    }
+
     &:before {
       animation-duration: .5s;
       animation-name: moon;

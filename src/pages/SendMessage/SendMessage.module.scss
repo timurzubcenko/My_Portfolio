@@ -35,7 +35,7 @@
                 background: var(--color-input);
                 // border: 1px solid rgba(255, 255, 255, 0.2);
                 border: none;
-                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+                box-shadow: 0px 0px 10px var(--color-shadow-2);
                 border-radius: 8px;
                 padding: 16px;
                 font-family: 'Public Sans';
@@ -54,7 +54,7 @@
                 resize: none;
                 // border: 1px solid rgba(255, 255, 255, 0.2);
                 border: none;
-                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+                box-shadow: 0px 0px 10px var(--color-shadow-2);
                 border-radius: 8px;
                 padding: 16px;
                 font-family: 'Public Sans';
@@ -83,25 +83,31 @@
             .btn {
                 font-family: 'Outfit';
                 font-style: normal;
-                font-weight: 700;
-                font-size: 20px;
+                font-weight: 400;
+                font-size: 29px;
                 line-height: 15px;
                 /* identical to box height, or 94% */
 
                 text-align: center;
                 text-transform: capitalize;
-
-                color: #FFFFFF;
-                padding: 20px 40px;
-                background: #FE461C;
-                border-radius: 4px;
+                padding: 20px;
+                margin-top: 40px;
+                background: transparent;
                 border: none;
+                border-bottom: 4px solid linear-gradient(#cf59e6, #8000ff);
+                color: var(--color-accent-2);
+                color: transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+                background-image: linear-gradient(to right, var(--color-accent-2), #cf59e6, var(--color-accent-2), #8000ff);
+                background-size: 400% 400%;
+                animation: gradient 6s ease infinite;
                 cursor: pointer;
-                transition: all 0.3s;
+                transition: all .3s;
             }
 
             .btn:hover {
-                transform: scale(1.05);
+                transform: scale(1.24);
             }
         }
     }

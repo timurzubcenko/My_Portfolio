@@ -80,7 +80,7 @@
 
                 text-align: center;
                 text-transform: capitalize;
-                padding-bottom: 20px;
+                padding: 10px 0;
                 margin-top: 40px;
                 background: transparent;
                 border: none;
@@ -97,7 +97,7 @@
             }
 
             .btn:hover {
-                transform: scale(1.05);
+                transform: scale(1.15);
             }
 
             @keyframes gradient {
