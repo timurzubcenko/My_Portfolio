@@ -36,37 +36,6 @@
     position: absolute;
   }
 
-  &.light:before {
-    background-color: var(--color-name);
-    animation-duration: 0.5s;
-    animation-name: sun;
-    border-radius: 50%;
-    box-shadow: 10px 0 0 -3.5px var(--color-name),
-      -10px 0 0 -3.5px var(--color-name),
-      0 -10px 0 -3.5px var(--color-name),
-      0 10px 0 -3.5px var(--color-name),
-      7px -7px 0 -3.5px var(--color-name),
-      7px 7px 0 -3.5px var(--color-name),
-      -7px 7px 0 -3.5px var(--color-name),
-      -7px -7px 0 -3.5px var(--color-name);
-    height: 10px;
-    left: 7px;
-    top: 7px;
-    width: 10px;
-
-    &:hover {
-      background-color: var(--color-name);
-      box-shadow: 10px 0 0 -3.5px var(--color-name),
-        -10px 0 0 -3.5px var(--color-name),
-        0 -10px 0 -3.5px var(--color-name),
-        0 10px 0 -3.5px var(--color-name),
-        7px -7px 0 -3.5px var(--color-name),
-        7px 7px 0 -3.5px var(--color-name),
-        -7px 7px 0 -3.5px var(--color-name),
-        -7px -7px 0 -3.5px var(--color-name);
-    }
-  }
-
   &.dark {
     &:before {
       background-color: var(--color-name);
@@ -99,6 +68,37 @@
       top: -2px;
       width: 18px;
       z-index: 2;
+    }
+  }
+
+  &.light:before {
+    background-color: var(--color-name);
+    animation-duration: 0.5s;
+    animation-name: sun;
+    border-radius: 50%;
+    box-shadow: 10px 0 0 -3.5px var(--color-name),
+      -10px 0 0 -3.5px var(--color-name),
+      0 -10px 0 -3.5px var(--color-name),
+      0 10px 0 -3.5px var(--color-name),
+      7px -7px 0 -3.5px var(--color-name),
+      7px 7px 0 -3.5px var(--color-name),
+      -7px 7px 0 -3.5px var(--color-name),
+      -7px -7px 0 -3.5px var(--color-name);
+    height: 10px;
+    left: 7px;
+    top: 7px;
+    width: 10px;
+
+    &:hover {
+      background-color: var(--color-name);
+      box-shadow: 10px 0 0 -3.5px var(--color-name),
+        -10px 0 0 -3.5px var(--color-name),
+        0 -10px 0 -3.5px var(--color-name),
+        0 10px 0 -3.5px var(--color-name),
+        7px -7px 0 -3.5px var(--color-name),
+        7px 7px 0 -3.5px var(--color-name),
+        -7px 7px 0 -3.5px var(--color-name),
+        -7px -7px 0 -3.5px var(--color-name);
     }
   }
 }
