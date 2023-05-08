@@ -39,7 +39,7 @@ const HomePage = ({ setStatusLink }) => {
                 scrub: true,
                 // markers: true,
             },
-            opacity: .4,
+            // opacity: .4,
             scale: .9,
         })
     }, [])
