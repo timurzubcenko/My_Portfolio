@@ -48,7 +48,7 @@
                 width: 70px;
                 height: 70px;
                 background: var(--color-btns);
-                box-shadow: 0 5px 15px -5px var(--color-shadow);
+                box-shadow: 0 5px 15px -5px var(--color-shadow-2);
                 margin: 10px;
                 border-radius: 30%;
                 overflow: hidden;
@@ -59,7 +59,8 @@
             }
 
             a:hover {
-                background: #e79459
+                background: var(--color-accent-2);
+                color: white;
             }
         }
 

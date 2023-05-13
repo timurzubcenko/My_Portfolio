@@ -12,18 +12,10 @@ import node from '../../assets/img/n.7a33a3dcc5d0e020dd08.png'
 const MyCard = () => {
 
     let card = useRef(null)
-    let reactIcon = useRef(null)
 
     useEffect(() => {
         const tl = gsap.timeline()
         tl.from(card, { y: 50, opacity: 0, duration: 1 })
-
-        const tl2 = gsap.timeline({ repeat: -1, repeatDelay: 0, defaults: { ease: "power0" } })
-        tl2.to(reactIcon, {
-            rotate: 360,
-            duration: 5,
-            transformOrigin: '50% 50%'
-        })
     }, [])
 
     return (
@@ -46,7 +38,7 @@ const MyCard = () => {
                 <button className={s.btn}>
                     <img src={express} alt="" />
                 </button>
-                <button ref={el => reactIcon = el} className={s.btn} >
+                <button className={s.btn} >
                     <img src={react} alt="" />
                 </button>
                 <button className={s.btn}>

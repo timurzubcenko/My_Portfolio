@@ -91,7 +91,7 @@
                 background-clip: text;
                 background-image: linear-gradient(to right, var(--color-accent-2), #cf59e6, var(--color-accent-2), #8000ff);
                 background-size: 400% 400%;
-                animation: gradient 6s ease infinite;
+                // animation: gradient 6s ease infinite;
                 cursor: pointer;
                 transition: all .3s;
             }
@@ -100,19 +100,19 @@
                 transform: scale(1.15);
             }
 
-            @keyframes gradient {
-                0% {
-                    background-position: 0 50%;
-                }
+            // @keyframes gradient {
+            //     0% {
+            //         background-position: 0 50%;
+            //     }
 
-                50% {
-                    background-position: 100% 50%;
-                }
+            //     50% {
+            //         background-position: 100% 50%;
+            //     }
 
-                100% {
-                    background-position: 0 50%;
-                }
-            }
+            //     100% {
+            //         background-position: 0 50%;
+            //     }
+            // }
         }
     }
 }
