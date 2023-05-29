@@ -33,7 +33,7 @@ const MyWorks = () => {
             scrollTrigger: {
                 trigger: section_1,
                 start: 'top top',
-                end: '+=8000',
+                end: 'bottom+=4500px',
                 scrub: true,
                 pin: true,
             },

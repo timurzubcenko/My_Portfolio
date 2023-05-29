@@ -15,9 +15,10 @@ const MySkils = () => {
         gsap.from([title, text], {
             scrollTrigger: {
                 trigger: section,
-                start: 'top center',
-                end: 'center center',
-                scrub: true,
+                start: 'top bottom',
+                end: 'bottom bottom',
+                toggleActions: 'restart',
+                // scrub: true,
                 // markers: true,
                 // pin: true
             },
