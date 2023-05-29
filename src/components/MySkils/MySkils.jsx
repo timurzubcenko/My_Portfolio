@@ -39,7 +39,7 @@ const MySkils = () => {
                         Hello, I'm Timur, I'm 17 years old and I'm a web developer from Ukraine, namely the city of Zaporozhye. create adaptive, cross-browser and convenient layout I am easy to work with and it is important to me that the client is satisfied!
                     </p>
                     <br />
-                    <p>I know well: JavaScript, React, React Native, Redux, Node JS, Express JS, MongoDB, GSAP, jQuery, HTML (HTML5), CSS (CSS3), SCSS, Flexbox, БЭМ.</p>
+                    <p>I know well: JavaScript, React, React Native, Redux, Vue JS, Node JS, Express JS, MongoDB, GSAP, jQuery, HTML (HTML5), CSS (CSS3), SCSS, Flexbox, БЭМ.</p>
                 </div>
             </div>
         </section>

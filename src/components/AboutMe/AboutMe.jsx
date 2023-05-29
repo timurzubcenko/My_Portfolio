@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import s from './AboutMe.module.scss'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import MyPhoto from '../../assets/img/photo_2023-04-14-15.27.35.webp'
+import MyPhoto from '../../assets/img/me.jpg'
 import { Link } from 'react-router-dom'
 
 const AboutMe = ({ setStatusLink }) => {
