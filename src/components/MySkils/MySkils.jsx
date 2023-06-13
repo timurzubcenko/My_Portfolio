@@ -33,7 +33,7 @@ const MySkils = () => {
         <section className={s.section} ref={el => section = el}>
             <div className={`${s.in_section} container`}>
                 <div className={s.title} ref={el => title = el}>
-                    <h3>My Skils</h3>
+                    <h3>My Skills</h3>
                 </div>
                 <div className={s.text} ref={el => text = el}>
                     <p>
